@@ -56,8 +56,6 @@ RUN echo "ubuntu:ubuntu" | chpasswd && \
 
 RUN wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb && apt install ./teamviewer_amd64.deb
 
-RUN sudo apt-get update && sudo apt-get install obs-studio
-
 COPY . /app
 
 RUN chmod +x /app/conf.d/websockify.sh
